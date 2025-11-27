@@ -3,17 +3,22 @@
   "name": "auto-create-component-nextjs",
   "displayName": "CodeD: Auto Create Component ReactJS - (Next JS)",
   "description": "Automatically create a component in the current folder with a template.",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "icon": "./imgs/icon.jpg",
+  "keywords": [
+    "react",
+    "nextjs",
+    "component",
+    "generator",
+    "scaffold"
+  ],
   "engines": {
     "vscode": "^1.84.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [
-    "onCommand:create-component.run"
-  ],
+  "license": "MIT",
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
@@ -38,7 +43,11 @@
     "watch": "tsc -watch -p ./",
     "pretest": "yarn run compile && yarn run lint",
     "lint": "eslint src",
-    "test": "vscode-test"
+    "test": "vscode-test",
+    "package": "vsce package",
+    "publish:patch": "vsce publish patch",
+    "publish:minor": "vsce publish minor",
+    "publish:major": "vsce publish major"
   },
   "devDependencies": {
     "@types/vscode": "^1.84.0",

@@ -32,7 +32,7 @@ export function activate(context: vscode.ExtensionContext) {
       const interfaceContent = `export interface Props${componentName} {}\n`;
       const indexContent = `export { default } from "./${componentName}";\n`;
       const tsxContent = `import styles from "./${componentName}.module.scss";
-import { Props${componentName} } from "./interfaces";
+import type { Props${componentName} } from "./interfaces";
 
 function ${componentName}({}: Props${componentName}) {
   return <div>${componentName}</div>;

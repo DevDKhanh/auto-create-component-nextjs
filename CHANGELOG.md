@@ -1,9 +1,27 @@
-# Change Log
+## Changelog
 
-All notable changes to the "cmp" extension will be documented in this file.
+### [0.1.2] - 2025-09-10
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+Remove import memo
 
-## [Unreleased]
+### [0.1.1] - 2025-07-07
 
-- Initial release
+Remove HOC memo
+
+### [0.1.0] - 2025-05-16
+
+Fix Syntax
+
+### [0.0.4] - 2025-05-09
+
+Fix Syntax
+
+### [0.0.3] - 2025-05-09
+
+Fix Syntax
+
+### [0.0.2] - 2025-05-09
+
+Initial release
+
+- Basic command to scaffold a React (Next.js compatible) component (.tsx + interface file).
